@@ -1,0 +1,1895 @@
+/**
+* Global
+**/
+html, body {
+    overflow: hidden;
+}
+
+#loader {
+    position: fixed;
+    top: 50%;
+    left: 46%;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.hand {
+    cursor: pointer;
+}
+
+.flexAlignedCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* search box */
+.searchBox {
+    position: relative;
+}
+
+.searchBox .form-control {
+    border: none;
+    border-radius: 4px;
+    background-color: #DAE1E8  !important;
+}
+
+.searchBox .form-control::-webkit-input-placeholder {
+    color: #7c61b3;
+}
+
+.searchBox .form-control:-moz-placeholder {
+    color: #7c61b3;
+}
+
+.searchBox .form-control::-moz-placeholder {
+    color: #7c61b3;
+}
+
+.searchBox .form-control:-ms-input-placeholder {
+    color: #7c61b3;
+}
+
+.searchBox .form-control:focus {
+    box-shadow: none;
+    background-color: #DAE1E8 !important;
+}
+
+.searchBox .btn-group.open .dropdown-toggle {
+    background-color: #4a3a6b !important;
+}
+
+.searchBox .caret {
+    color: #7c61b3 !important;
+}
+
+.searchBox .search-dropdown {
+    position: absolute;
+    top: 1px;
+    right: 30px;
+    background-color: transparent;
+}
+
+.searchBox .dropdown-menu {
+    min-width: 100px;
+}
+
+.searchBox .search-dropdown .searchModeBTN {
+    font-size: 9px;
+}
+
+.searchBox .searchBoxIcon {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+
+.searchBox .searchBoxIcon .fa-search {
+    font-size: 14px;
+}
+
+/*search text box*/
+
+.searchTextBox {
+    position: relative;
+    flex-grow: 2; -ms-flex: 2;
+}
+
+.searchTextBox input {
+    padding-right: 30px;
+}
+
+.searchTextBox-icon {
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+    top: 50%;
+    margin-top: -10px;
+    outline: none;
+}
+
+/*end search text box*/
+
+/*complex pager*/
+.complexPager {
+    margin: 0 auto;
+}
+
+.complexPager-firstPage,
+.complexPager-nextPage,
+.complexPager-lastPage,
+.complexPager-prevPage {
+    font-size: 16px;
+    width: 16px;
+    color: #ababab;
+}
+
+.complexPager-firstPage-enabled:hover,
+.complexPager-nextPage-enabled:hover,
+.complexPager-lastPage-enabled:hover,
+.complexPager-prevPage-enabled:hover {
+    color: #468dc8;
+    cursor: pointer;
+}
+
+.complexPager-firstPage-disabled,
+.complexPager-nextPage-disabled,
+.complexPager-lastPage-disabled,
+.complexPager-prevPage-disabled {
+    opacity: 0.2;
+}
+
+.pageJumpWidget td {
+    padding: 2px;
+}
+
+.totalLabelCell {
+    padding-right: 10px;
+}
+
+.perPageWidget {
+    margin-left: 10px;
+}
+
+.perPageWidget select {
+    margin-right: 2px;
+}
+
+/*complex pager end*/
+
+/**
+* Global end
+*/
+
+/**
+* Shell
+**/
+#shell {
+    padding: 0px;
+}
+
+#logo {
+    position: absolute;
+    font-size: 120px;
+    color: white;
+    background: url("../images/itm_logo_no_text.svg") no-repeat 0 0;
+    display: block;
+    height: 37px;
+    margin: 4px 0 0 5px;
+    text-indent: -9999px;
+    width: 34px;
+    cursor: pointer;
+}
+
+.shell-search {
+    position: relative;
+    display : inline-flex;
+}
+.shell-search .btn {
+     color: white;
+}
+.shell-search .searchBox .search-dropdown .searchModeBTN {
+    background-color: transparent;
+}
+
+.shell-search .searchBox input {
+    background-color: transparent;
+    color: #7c61b3;
+    padding-right: 80px;
+}
+
+.shell-search .searchBox .searchBoxIcon .fa-search {
+    color: #7c61b3;
+}
+
+.shell-search .searchBox {
+    width: 350px;
+}
+
+.shell-search > a {
+    position: absolute;
+    top: 5px;
+    left: 360px;
+    white-space: nowrap;
+    color: #58427E;
+}
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+}
+
+#header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#header .navbar {
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+#header .container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#banner {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border: none;
+    height: 44px;
+}
+
+#banner > .container {
+    margin-top: 10px;
+}
+
+#toolbar i {
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 11px 5px 11px;
+    position: relative;
+    cursor: pointer;
+}
+
+#toolbar i:hover {
+    color: #dedef6;
+}
+
+#toolbar i .badge {
+    left: 20px;
+    position: absolute;
+    top: -3px;
+}
+
+.popup-menu .btn {
+    border: none;
+    padding: 2px 4px;
+    width: 100%;
+    text-align: left;
+}
+
+#menubar {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#menubar .selected-module {
+    background-color: #272840;
+}
+
+#menubar .selected-module a {
+    color: #FFF;
+}
+
+#menubar .selected-module .dropdown-menu a {
+    color: #333;
+}
+
+#menubar .menubar-select {
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+
+#menubar .navbar-form {
+    padding-left: 0px;
+}
+
+#workspace {
+    padding-top: 10px;
+}
+
+#userlabel {
+    color: #ffffff;
+    margin: 3px 0px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #8a96a4;
+}
+
+.navbar-inverse .navbar-nav > li > a .fa {
+    font-size: 16px;
+}
+
+.btn-dark .btn-default {
+    background-color: #272840;
+    color: #DBE1E7;
+    border: none;
+}
+
+.btn-dark .btn-default:hover {
+    background-color: #272840;
+    color: #DBE1E7;
+}
+
+.btn-dark .btn-default:focus {
+    background-color: #272840;
+    color: #fff;
+}
+
+.btn-dark .dropdown-menu {
+    background-color: #272840;
+}
+
+.btn-dark .dropdown-menu > li > a {
+    color: #8a96a4;
+}
+
+.btn-dark .dropdown-toggle.btn-default {
+    background-color: #272840;
+    color: #ffffff;
+}
+
+.navbar {
+    min-height: 40px;
+}
+
+.navbar-nav > li > a {
+    padding-bottom: 13px;
+    padding-right: 10px;
+    padding-top: 13px;
+    padding-left: 6px;
+}
+
+/**
+* Shell end
+*/
+
+.dashboardCentralTabWidget .nav-tabs > li > a {
+	font-size:16px;
+}
+.nav-tabs > li > a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+
+}
+
+.nav-tabs > li > a:hover {
+    background-color: #d3dbe3;
+    border: 1px solid #d3dbe3;
+    color: #57697c;
+}
+
+.hide {
+    display: none;
+}
+
+.att-box {
+    display: flex; display: -ms-flexbox;
+    min-height: 30px;
+    /*padding: 4px 8px;*/
+    border-bottom: 1px solid #d3dbe3;
+}
+
+.att-box-deleteDisabled {
+    /* padding-right: 16px;*/
+}
+
+.att-box:last-child {
+    border-bottom: none;
+}
+
+.att-box-hover {
+    background-color: #f6f6f6;
+}
+
+.att-box-hover .edit-button, .att-box-hover .delete-button {
+    /*display: inline !important;*/
+    visibility: visible !important;
+}
+
+.att-box-commit_button {
+    margin: auto 7px 4px auto;
+    align-self: flex-end;
+    color: green;
+    padding: 3px 7px;
+    
+}
+
+.att-box-cancel_button {
+    color: red !important;
+}
+
+.att-box-display .att-box-commit_button {
+    display: none;
+}
+
+.att-box-display .fa-trash-o {
+    color: red;
+}
+
+.att-box-edit {
+    background-color: #cdeafa;
+}
+
+.att-box-edit .fa-times {
+    color: red;
+    /*display: block !important;*/
+    visibility: visible !important;
+    margin-bottom: 3px !important;
+}
+
+.att-box-edit .edit-button{
+    display: none !important;
+}
+
+.att-box .widget-holder {
+    margin: 4px 10px auto auto;
+    display: flex !important;
+    align-self: flex-start;
+    /*width: 100%;*/
+    flex: 1; -ms-flex: 1;
+    padding: 4px 8px;
+}
+
+.att-box .edit-button {
+    display: inline-block;
+    visibility: hidden;
+    margin: auto 10px auto auto;
+    align-self: flex-end;
+    color: #70A6D4;
+    cursor: pointer;
+}
+
+.att-box .delete-button {
+    display: inline-block;
+    visibility: hidden;
+    margin: auto 0px auto 0;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.att-box-editor {
+    display: flex; display: -ms-flexbox;
+    flex: 1; -ms-flex: 1;
+    margin: 0;
+}
+
+.att-box-editor-hasError .att-editor, .att-box-editor-hasError .note-editor {
+    border-color: #a94442;
+    background: #F7BCC4;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.att-box-editor-hasError .note-editable {
+	border-color: #a94442;
+    background-color: #F7BCC4;
+}
+
+
+.att-editor {
+    align-self: flex-start;
+}
+
+.att-widget {
+    width: 100%;
+    display: flex; display: -ms-flexbox;
+    border: 1px solid #d3dbe3;
+}
+
+.att-widget-labelContainer {
+    color: #57697c;
+    font-size: 13px;
+    width: 250px;
+    min-width: 250px;
+    background-color: #e1e7ed;
+    border-right: 1px solid #d3dbe3;
+}
+
+.att-widget-label {
+    height: 54px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.att-widget-boxContainer {
+    flex-grow: 1; -ms-flex: 1;
+    background-color: white;
+    font-size: 15px;
+}
+
+.att-widget-addButton-holder {
+    display: flex; display: -ms-flexbox;
+    border-top: 1px solid #d3dbe3;
+}
+
+.att-widget-addButton {
+
+    float: right;
+    margin: 4px 8px;
+    padding: 3px 7px;
+}
+
+.att-add-button {
+    cursor: pointer;
+    display: flex; display: -ms-flexbox;
+    border: 2px solid #a9a9a9;
+    border-radius: 4px;
+    height: 34px;
+    background-color: white;
+    margin-right: 22px;
+}
+
+.att-add-button-label {
+    margin: auto;
+    font-weight: bold;
+}
+
+.att-addwidget {
+    display: flex; display: -ms-flexbox;
+    border: 1px solid #d3dbe3;
+    margin-bottom: 15px;
+    height: 54px;
+    background-color: white;
+    margin-right: 22px;
+}
+
+.att-addwidget .btn-group {
+    margin: 10px;
+    width: 230px;
+}
+
+.att-addwidget .btn {
+    width: 100%;
+}
+
+.att-addwidget-combo-container {
+    width: 250px;
+    min-width: 250px;
+    background-color: #e1e7ed;
+    border-right: 1px solid #d3dbe3;
+}
+
+.att-box-control-holder {
+    float: right;
+    width: 10px;
+    align-self: flex-end;
+    margin-bottom: 4px;
+    margin-right : 10px;
+}
+
+.att-box-display .att-box-control-holder {
+    width: 35px;
+}
+
+.att-panel {
+    padding: 0 10px;
+    /*
+    background-color: #fbfbfb;
+    */
+}
+
+.att-panel-header {
+    color: #70A6D4;
+    margin-bottom: 20px;
+}
+
+.att-panel-container {
+    margin-top: 20px;
+}
+
+.att-panel-slot {
+    display: flex; display: -ms-flexbox;
+}
+
+.att-panel-slot .att-widget {
+    flex-grow: 1; -ms-flex: 1;
+    margin-right: 12px;
+}
+
+.att-panel-slot-noDeleteButton .att-widget {
+    /*margin-right: 22px;*/
+}
+
+.att-panel-slot .att-delete {
+    align-self: flex-end;
+    margin: 15px auto auto auto;
+}
+.btn-add-attribute-panel {
+    margin-right: 22px;
+}
+
+.btn-add-attribute {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.att-box-double-editor {
+    flex-grow: 1; -ms-flex: 1;
+}
+
+.att-box-double-editor .first-text {
+    margin-bottom: 4px;
+}
+
+.att-panel-container {
+}
+
+.att-languageEditor {
+    margin-right: 10px;
+    max-width: 55px;
+    align-self: flex-start;
+}
+
+.att-lang-secondary {
+    /*UIM-88 : mais seulement sur les names*/
+    align-self: flex-end;
+ }
+
+.att-languageEditor .bootstrap-select{
+    width: auto !important;
+}
+
+.att-display-language {
+    /*display: flex; display: -ms-flexbox;*/
+    width: 100%;
+}
+
+.att-display-language span {
+    display: inline;
+}
+
+.att-display-language-text {
+    /*flex: 1; -ms-flex: 1; -ms-flex:1;*/
+    font-size: 15px;
+}
+
+.addedInContext {
+    color: green;
+}
+
+.deletedInContext{
+    color:red;
+}
+
+.btn.btn-link.att-display-language-text {
+    padding: 0 !important;
+}
+
+.att-display-language-langvalue {
+    /*width: 20px;*/
+    color: #BBBBBB;
+}
+
+.note-editable {
+    background-color: #FFFFFF;
+}
+
+.recentActivitiesPanel .panel-body,
+.favoritesPanel .panel-body {
+    border: none;
+}
+
+.dashboadCentralTabWidget .tab-content {
+
+	border-top: 2px solid #ddd;
+}
+
+.tab-content {
+    border-radius: 0 0 4px 4px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+#tasksTab,
+#topicsTab,
+#notificationsTab {
+    padding: 25px 15px 10px;
+}
+
+.dashboardViewPanel .panel {
+    box-shadow: none;
+    border: none;
+}
+
+.dashboardViewPanel .panel .panel-body {
+    border-radius: 0 0 4px 4px;
+}
+
+/**
+* dashboard
+**/
+
+.dashboardViewPanel {
+    padding: 10px 50px;
+}
+
+.recentActivitiesPanel {
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+}
+
+.dashboardCentralTabWidget {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.dashboardCentralTabWidget a {
+    color: #9aa5b0;
+    background-color: #dae1e8;
+}
+
+.dashboardCentralTabWidget .active a {
+    font-weight:bold;
+}
+
+.dashboardCentralTabWidget .tabNumber {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.dashboardCentralTabWidget .tabText {
+}
+
+.favoritesPanel {
+    width: 32%;
+    float: right;
+}
+
+.notificationsPanel .notificationItem {
+}
+
+.userTasksPanel {
+    width: 100%;
+}
+
+#tasksTab h5,
+#topicsTab h5,
+#notificationsTab h5 {
+    border-bottom: 2px solid #ddd;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: -8px;
+    padding-bottom: 8px;
+}
+
+.recentActivityNameCell .raNameText {
+    font-size: 14px;
+    color: #2e3640;
+}
+
+.recentActivityNameCell .raNameSubText {
+    font-size: 12px;
+    color: #2e3640;
+}
+
+.recentActivityTimeCell {
+    font-size: 12px;
+    color: #5f646d;
+}
+
+.panel-heading .fa-filter {
+    color: #fff;
+    opacity: 0.6;
+}
+
+.panel-heading .fa-filter:hover {
+    opacity: 1;
+}
+
+/**
+* end dashboard
+*/
+
+.loginPanel {
+    width: 360px;
+    margin-top: -200px;
+    margin-left: -118px;
+}
+
+.loginPanel .panel-body legend {
+    border-bottom: 2px solid #cdcdcd;
+    text-align: center;
+}
+
+.login-title {
+    color: #858585;
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    top: 21px;
+    background: #f8f8f8;
+    padding: 0 6px;
+}
+
+.loginPanel .usernameField {
+    margin: 15px 0 10px 0;
+}
+
+.loginPanel .usernameField,
+.loginPanel .passwordField {
+    height: 44px;
+}
+
+.loginPanel .loginBtn {
+    margin: 14px 0;
+    width: 100%;
+}
+
+.headerPanel {
+    display: inline-block;
+}
+
+.icon-scfLogo {
+    text-indent: -9999px;
+    width: 28px;
+    height: 28px;
+    background: url("../images/scf_logo.svg");
+    background-size: 28px 28px;
+    margin-right: 10px;
+}
+
+.icon-mondecaLogoGray {
+    display: inline-block;
+    text-indent: -9999px;
+    width: 120px;
+    height: 30px;
+    background: url("../images/mondeca_logo_gray.svg");
+    background-size: 120px 30px;
+    margin: 0 auto;
+    display: block;
+}
+
+/**
+* Add topic
+*/
+#add-topic {
+    padding: 10px 100px;
+}
+
+.page-header-container {
+    margin: 0 -30px 0 -15px;
+}
+
+#add-topic .page-header button {
+    float: right;
+}
+
+.topic-item {
+    margin-bottom: 5px;
+}
+
+.topic-item:hover .drag-area {
+    display: block;
+}
+
+.drag-area {
+    width: 8px;
+    height: 23px;
+    position: absolute;
+    left: 3px;
+    top: 6px;
+    background: url("../images/icon-drag.svg");
+    opacity: 0.3;
+    display: none;
+}
+
+.topic-item-name,
+.topic-item-class-name {
+    width: 48%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-binding: url('assets/xml/ellipsis.xml#ellipsis');
+}
+
+.topic-item-name {
+    margin-right: 2%;
+}
+
+.topic-item-icon {
+    color: #000;
+    opacity: 0.2;
+    font-size: 16px;
+    position: absolute;
+    right: 6px;
+    top: 11px;
+    display: none;
+}
+
+.active .topic-item-icon {
+    display: block;
+}
+
+.active.marked-topic {
+    background-color: #01c4c6 !important;
+    background-color: #01c4c6 !important;
+}
+
+.marked-topic {
+    border-color: #01c4c6 !important;
+    border-width: 2px;
+}
+
+.page-content .navbar-nav.navbar-right:last-child {
+    margin-right: 0px;
+}
+
+.page-content .navbar-form {
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.page-content .navbar {
+    margin-bottom: 10px;
+    min-height: 20px;
+}
+
+.page-content .navbar-nav {
+    margin-right: 0px;
+}
+
+.page-content .navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+    font-size: 12px;
+    padding-bottom: 0px;
+    padding-top: 8px;
+    line-height: 20px;
+    opacity: 0.6;
+}
+
+.page-content .navbar-default .navbar-nav > li > a:hover {
+    opacity: 1;
+}
+
+.page-content .navbar-default {
+    background-color: #7c61b3;
+    border-radius: 4px 4px 0 0;
+}
+
+/*.collapse-panel .panel-body {
+    background-color: #F5F5F5;
+}
+
+.collapse-panel > .panel-heading {
+    border: none;
+    color: #428bc9;
+    height: 30px;
+    padding: 5px 20px;
+    font-size: 14px;
+}*/
+.collapse-panel .title:hover {
+    cursor: pointer;
+}
+
+.collapse-panel .toggleLBL {
+    float: right;
+    opacity: 0.75;
+    color: #7c61b3;
+    margin-top: 4px;
+}
+
+.collapse-panel .headerPlaceholder{
+    float: left;
+}
+.collapse-panel .toggleLBL {
+
+    float: right;
+    opacity: 1;
+    color: #7c61b3;
+    margin-top: 4px;
+}
+
+/*workaround for select dropdown icon*/
+.collapse-panel .headerPlaceholder .filter-option,
+.asc-entry-header .addAttributeRoleComboPlaceholder .filter-option{
+    background: url("../images/Plus_sign_font_awesome.svg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-size: 12px;
+    padding-left: 17px;
+    background-position: left center;
+}
+
+.collapse-panel .headerPlaceholder .btn{
+    background-color: #ec7c49;
+    color: #fff;
+}
+
+.addAttributeRoleComboPlaceholder .btn-group {
+    margin: 0 5px;
+}
+
+.addRoleCustomSelect, .addAttributeCustomSelect, .addAssociationCustomSelect{
+    width: 210px !important;
+} 
+
+.asc-entry-header .addAttributeRoleComboPlaceholder .btn{
+    background-color: #57697c;
+    color: #fff;
+}
+
+.attributeCollapsePanel-title, .associationsCollapsePanel-title{
+    float: left;
+    margin-right: 20px;
+}
+
+.row-block {
+    padding: 4px 14px 8px;
+    margin: 0 -15px 10px;
+}
+
+.row-block .row {
+    margin-bottom: 2px;
+}
+
+.row-block label {
+    line-height: 30px;
+}
+
+.collapse-panel .collapse-title {
+    font-weight: normal;
+}
+
+.collapse-panel .bootstrap-switch {
+    float: right;
+}
+
+.collapse-panel .title .container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.class-form {
+    padding-top: 10px;
+}
+
+.class-form .label {
+    font-weight: normal;
+}
+
+.used-class-name {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.dots {
+    background: url("../images/dots.svg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    width: 16px;
+    height: 4px;
+    /*float: left;*/
+    display: inline-block;
+}
+
+/**
+* end add topic
+*/
+
+/**
+* switch
+*/
+.bootstrap-switch {
+    width: 70px;
+    border-radius: 10px;
+}
+
+.bootstrap-switch > div > span.bootstrap-switch-default {
+    color: #999;
+    border-radius: 10px 0 0 10px;
+}
+
+.bootstrap-switch.bootstrap-switch-on > div > label {
+    border-radius: 0 10px 10px 0;
+}
+
+.bootstrap-switch.bootstrap-switch-off > div > label {
+    border-radius: 10px 0 0 10px;
+}
+
+.bootstrap-switch > div > span.bootstrap-switch-handle-off {
+    border-radius: 0 10px 10px 0;
+}
+
+/**
+* end switch
+*/
+
+/* pointer widget */
+.pointerSearchWidgetContainer {
+    width: 100%;
+    font-size: 15px;
+}
+
+.pointerSearchWidgetContainer-hasError .ptr-searchPanel input {
+    border-color: #a94442;
+    background: #F7BCC4;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.ptr-searchContainer {
+    display: flex; display: -ms-flexbox;
+    width: 100%;
+    flex-grow: 1; -ms-flex: 1;
+    padding: 4px 8px
+}
+
+.ptr-searchPanel {
+    position: relative;
+    flex-grow: 2; -ms-flex: 2;
+    margin: 0 10px;
+}
+
+.ptr-searchPanel input {
+    padding-right: 30px;
+}
+
+.ptr-searchPanelIcon {
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+    top: 50%;
+    margin-top: -10px;
+    outline: none;
+}
+
+.ptr-searchPopup {
+    font-size: 13px;
+    position: absolute;
+    background-color: #f6f6ff;
+    border-radius: 4px;
+    /*
+    margin: 2px 0 0 0;
+    border: 1px solid #d3dbe3;
+    */
+    z-index: 1000;
+}
+
+.ptr-searchPopup .closeBtn {
+    margin-right: 5px;
+    margin-top: 3px;
+    /*font-size: 16px;*/
+    cursor: pointer;
+    color: #d9544f;
+}
+
+.ptr-searchPopupTablePagination {
+    margin: 5px auto;
+}
+
+.ptr-searchPopupTableHolder {
+
+}
+
+.ptr-searchPopupTableHolder .table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {
+    padding: 2px !important;
+}
+
+.ptr-searchPopupTable {
+    font-size: 13px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.ptr-searchPopupTable > tbody > tr {
+    background-color: #f9f9f9;
+}
+
+.ptr-selectedPointersContainer {
+    background: white;
+    padding: 0 10px;
+}
+
+
+.ptr-itemView {
+    display: flex; display: -ms-flexbox;
+    min-height: 30px;
+    /*border-top: 1px solid #d3dbe3;*/
+    /*padding: 5px 8px;*/
+    padding-right: 7px;
+}
+
+.ptr-itemArrow {
+    align-self: center;
+    margin-right: 4px;
+}
+
+
+.ptr-itemView-hover {
+    background-color: #f6f6f6;
+}
+
+.ptr-itemView-hover .ptr-itemDeleteIcon {
+    display: inline !important;
+}
+
+.ptr-itemLabel {
+    flex-grow: 1; -ms-flex: 1;
+    align-self: center;
+}
+
+.ptr-itemLabel:hover {
+    cursor:pointer;
+}
+
+.ptr-itemView .centerableTopic:hover {
+    text-decoration: underline;
+}
+
+
+.ptr-itemDeleteIcon {
+    align-self: center;
+    display: none;
+    color: red;
+    cursor: pointer;
+}
+
+.prt-buttonBar {
+    display: flex;
+}
+
+.btn-add-ptr {
+    padding: 1px 5px 2px 5px;
+}
+
+.att-box .pointerSearchWidgetContainer {
+    width: 103%;
+    margin: -4px -18px -4px -8px
+}
+
+.att-box-edit .pointerSearchWidgetContainer .ptr-searchContainer {
+    background: white;
+}
+
+.ptrCombo-widgetContainer {
+    width: 100%;
+}
+
+.ptrCombo-selectBoxContainer {
+}
+
+.ptrCombo-selectBox {
+    width: 100% !important;
+}
+
+.ptrCombo-widgetContainer {
+}
+
+.ptrCombo-widgetContainer-hasError button {
+    border: 1px solid red;
+}
+
+.searchMode-group button {
+    border: none;
+}
+
+/* end pointer widget */
+
+/*associations*/
+
+.asc-panel {
+    padding: 10px;
+    margin-right: 17px;
+}
+
+.asc-panel-heading {
+    text-transform: uppercase;
+    color: blue;
+    font-weight: bold;
+}
+
+.asc-panel-container {
+}
+
+.fa-trash-o:hover {
+    color: red !important;
+}
+
+.asc-entry-header {
+    display: flex; display: -ms-flexbox;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size:13px;
+}
+
+.asc-entry-header .fa{
+    line-height: 33px;
+}
+
+.asc-entry-heading {
+    flex-grow: 2; -ms-flex: 2;
+    color: #57697c;
+    font-weight: 600;
+}
+
+.asc-entry-header .addAttributeRoleComboPlaceholder{
+    flex-grow: 2; -ms-flex: 2;
+    margin-left: 20px;
+    min-width: 420px;
+}
+
+.asc-entry-panel .panel-heading {
+    background-color: #b5c3d1;
+    border: none;
+    color: #fff;
+}
+
+.asc-entry-heading-deleteIcon {
+    cursor: pointer;
+}
+
+.asc-entry-content {
+}
+
+.asc-entry-panel .panel-body {
+    padding: 0;
+}
+
+.asc-addwidget {
+    background-color: #bbbbbb;
+    padding: 4px 10px;
+    border-radius: 3px 3px 0 0;
+    margin-bottom: 20px;
+}
+
+.asc-addwidget-combo-container {
+}
+
+.btn-newRole {
+    border-radius: 0;
+    width: 100%;
+    border: none;
+    color: #ec7c49;
+}
+
+.btn-newAttribute {
+    border-radius: 0;
+    width: 100%;
+    border-width: 1px 0;
+    color: #ec7c49;
+    border-color: #D3DBE3;
+}
+
+.btn-newRole:hover,
+.btn-newAttribute:hover {
+    background-color: #e9edf1;
+    color: #d46f42;
+    border-color: #D3DBE3;
+}
+
+.addCurrentTopicBTN {
+    margin: 5px;
+}
+
+.asc-role-widget {
+    display: flex; display: -ms-flexbox;
+    border-bottom: 1px solid #d3dbe3;
+    position: relative;
+}
+
+.asc-role-widget-labelContainer {
+    color: #777777;
+    width: 250px;
+    min-width: 250px;
+    background-color: #e1e7ed;
+    border-right: 1px solid #d3dbe3;
+}
+
+.asc-role-widget-label {
+    height: 54px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.asc-role-widget-boxContainer {
+    flex-grow: 1; -ms-flex: 1;
+    background-color: white;
+}
+
+.asc-role-deleteRole-icon {
+    position: absolute;
+    right: -18px;
+    margin-top: 14px;
+    cursor: pointer;
+    display:none;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.asc-att-panel-slot {
+    display: flex; display: -ms-flexbox;
+    position: relative;
+}
+
+.asc-att-panel-slot .att-widget {
+    flex-grow: 1; -ms-flex: 1;
+    border-left: none;
+    border-right: none;
+}
+
+.asc-att-panel-slot-noDeleteButton .att-widget {
+    /*margin-right: 22px;*/
+}
+
+.asc-attribute-container {
+    /*margin-top: 10px;*/
+}
+
+.asc-att-panel-slot .asc-att-delete {
+    position: absolute;
+    right: -18px;
+    align-self: flex-end;
+    margin: 22px auto auto auto;
+    cursor: pointer;
+    display:none;
+}
+
+/*end associations*/
+
+.icon-searchBegin {
+    margin: 3px 0 0 3px;
+    display: inline-block;
+    width: 30px;
+    height: 8px;
+    text-indent: 20px;
+    background: url("../images/icon-begin.svg") no-repeat;
+    background-size: 28px 8px;
+}
+
+.icon-searchContains {
+    margin: 3px 3px 0 3px;
+    display: inline-block;
+    width: 30px;
+    height: 8px;
+    text-indent: 20px;
+    background: url("../images/icon-contains.svg") no-repeat;
+    background-size: 28px 8px;
+}
+
+.icon-searchExact {
+    margin: 3px 3px 0 3px;
+    display: inline-block;
+    width: 30px;
+    height: 8px;
+    text-indent: 20px;
+    background: url("../images/icon-exact.svg") no-repeat;
+    background-size: 28px 8px;
+}
+
+.searchBox .icon-searchBegin {
+    background: url("../images/icon-begin-purple.svg") no-repeat;
+}
+
+.searchBox .icon-searchContains {
+    background: url("../images/icon-contains-purple.svg") no-repeat;
+}
+
+.searchBox .icon-searchExact {
+    background: url("../images/icon-exact-purple.svg") no-repeat;
+}
+
+.searchModeBTN {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.searchMode-group a {
+    padding: 3px 5px !important;
+}
+
+.searchMode-group .caret {
+    color: #57697c;
+}
+
+.searchResultViewPanel {
+    padding: 5px 40px;
+}
+.asc-dragZone {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    border: 2px dashed #aeaeae;
+}
+
+.asc-dragZone-hover {
+    opacity: 1;
+}
+
+.asc-dragZone-icon {
+    width: 29px;
+    height: 31px;
+    background: url("../images/icon-drag2.svg") no-repeat;
+    background-size: 29px 31px;
+    display: block;
+    width: 130px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -15px;
+}
+.dragBoxContainer {
+    position: relative;
+    flex-grow: 1; -ms-flex: 1;
+}
+
+/*generic tree*/
+.simple-tree-item-label {
+    flex-grow: 1;
+    align-self: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.simple-tree-item-label:hover{
+    cursor: pointer;
+}
+
+.centered.simple-tree-item-label {
+   font-weight:bold;
+}
+
+
+.simple-tree-item-children {
+    padding-left: 14px;
+    margin-left: 6px;
+}
+
+/* Centered topic */
+.center-topic .delete-button {
+    color: #d2005b;
+}
+
+.center-topic .buttonsBar .buttonsBar-button{
+   margin: 0 3px; 
+}
+
+/*Classes view*/
+.newClassContainer .row-block {
+    margin-left: 0;
+    margin-right: 0;
+}
+.newClassContainer .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/*topic action header*/
+.topicActionHeader{
+    display: flex;
+    align-items: center;
+}
+.ta-buttonBar {
+    margin-left: auto;
+    white-space: nowrap;
+    /*padding-right: 20px;*/
+    width:380px;
+}
+
+.ta-buttonBar-button, .ta-buttonBar-button .btn{
+    margin-right: 5px;
+    background: transparent;
+    color: #CBC9C9;
+    text-transform: none;
+}
+
+.ta-buttonBar-button:hover, .ta-buttonBar-button .btn:hover, .ta-buttonBar-button .btn:active {
+    background: #CBC9C9;
+    color: #7c61b3;
+}
+
+.actionButton{
+    max-width:130px;
+}
+
+/*pour ne pas que le dropdown des actions déborder à droite, et ne déclenche une scrollbar horizontale */
+.actionButton .dropdown-menu open {
+    left:-100px !important;
+}
+
+
+.classesDetailsView-buttonBar button{
+    margin-right: 5px;
+}
+
+.classesDetailsView-buttonBar{
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.headerWidgetPlaceholder {
+    /*max-width: 450px;*/
+    font-size: 16px;
+}
+
+.groupAdvancedDetailsView .row-block {
+    margin-left: 0;
+    margin-right: 0;
+}
+.groupAdvancedDetailsView .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.groupAdvancedDetailsView .classesDetailsView-buttonBar {
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+
+.headerClassLabel {
+  max-width: 260px;
+  color: inherit;
+  font-size: 12px;
+}
+
+/* Working contexts*/
+.userTasksPanel .selectableContext {
+    width: 100%;
+}
+
+.userTasksPanel .selectableContext .context{
+    width: 100%;
+}
+
+.selectableContext:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.toolbar-button > .fa-tags {
+    color: #d2005b !important;
+}
+
+
+/*Dialogs*/
+.basicDialog input {
+    line-height: 22px;
+    min-width: 180px;
+}
+
+.centerableTopic{
+    
+}
+.centerableTopic:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#topic-not-found {
+    padding: 80px 100px;
+    text-align: center;
+}
+
+
+.creationFailures{
+    color: #d2005b;
+}
+.updateFailure{
+    color: #d2005b;
+}
+
+.duplicatedObjectsWarnings{
+    color: #d2005b;
+}
+
+/*Search result*/
+/* un style pour écraser celui défini en standard par boostrap, et qui cache les coches du tableau de résultats */
+.editorGridPanelContainer .checkbox {
+    min-height: 0px !important;
+    padding-left: 0px !important;
+}
+
+.search-extra-actions .navbar-nav > li > a {
+    color: grey;
+
+}
+
+/*Administration*/
+#administration {
+    padding: 10px 100px;
+}
+
+#administration .container.page-content {
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px 50px;
+}
+
+.adminSection button {
+    color: black !important;
+}
+}
+
+.search-popup-action  {
+    color: #fff;
+}
+
+.search-popup-action:hover  {
+    color: #fff;
+}
+
+.search-popup-action  .fa-times {
+    color: #fff;
+}
+
+.search-popup-action:hover  .fa-times {
+    color: #fff;
+}
+
+.search-popup-button {
+    color: #fff;
+    padding-top:0px;
+    padding-left:0px;
+    padding-right:20px;
+}
+.search-popup-button:focus {
+    color: #fff;
+}
+
+.search-popup-button .fa-filter {
+    opacity: 1.0;
+}
+
+.ptr-searchPopup .panel {
+    margin-bottom: 0px;
+}
+
+.ptr-searchPopup .panel-heading {
+    padding: 10px 10px;
+    background-color: #7C61B3;
+}
+
+.search-table-cell {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+}
+
+.ptr-searchPopupTable td  div {
+    /*   
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    */
+}
+
+.search-panel-tooltip {
+    z-index: 2000;
+    border: 1px solid #d3dbe3;
+    border-radius: 4px;
+    background-color: #FFF  !important;
+    padding: 3px;
+    white-space:wrap;
+    max-width: 300px;
+}
+
+.ptr-searchPopup .panel-body {
+    padding-left : 0px;
+    padding-right : 0px;
+}
+
+.ptr-search-details-panel .panel-body {
+    border:none !important;
+}
+
+#detailsTab .panel-default {
+    border:0px !important;
+}
+
+#detailsTab .panel{
+    border:0px !important;
+}
+
+#detailsTab .panel-body {
+    border:0px !important;
+}
+
+#detailsTab .ptr-searchPopupTable  {
+    border:border: 1px solid #DDDDDD;
+}
+
+#filterTab .panel-default {
+    border:0px !important;
+}
+
+#filterTab .panel{
+    border:0px !important;
+}
+
+#filterTab .panel-body {
+    border:0px !important;
+}
+
+.ptr-searchPopupTable > tbody > tr > td {
+    border-right: 1px solid #FFF;
+}
+
+.search-popup-class-selected {
+    margin-left:10px;
+    border:1px solid #FFF;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 1px;
+}
+
+.search-popup-class-selected:hover {
+    margin-left:10px;
+    border:1px solid #FFF;
+    border-radius: 3px;
+    text-decoration: none;
+    
+}
+
+.ptr-searchPopupTableHolder .toolbar {
+    background-color: #FFF !important;
+    padding: 5px;
+}
+
+.ptr-searchPopupTableHolder {
+    padding: 1px;
+}
+.btn-link:focus,
+.btn-link:active:focus{
+    outline:none;
+}
+
+.btn-link:focus{
+    text-decoration:none;
+}
+.btn-link:hover{
+    text-decoration:underline;
+}
+
+
+/*dialog boxes*/
+.modal-dialog .custom-modal {
+    width : 650px;
+}
+
+.modal-dialog .history-viewer-modal {
+    width : 750px;
+}
+
+.modal-dialog.changeClassConfirm{
+    width:500px;
+}
+
+.actionDialogPanel{
+	height:400px;
+}
+/** Users **/
+.managerUsersViewPanel {
+    padding: 10px 50px;
+}
+.my-message-box {
+	left: 35%;
+	top: 10%;
+}

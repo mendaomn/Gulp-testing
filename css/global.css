@@ -1,0 +1,19 @@
+html,
+body {
+    overflow: auto !important; 
+}
+
+.btn-star {
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+.table--3clmns th:last-child,
+.table--3clmns td:last-child {
+    text-align: right;
+}
+
+.table--3clmns th:nth-child(2),
+.table--3clmns td:nth-child(2) {
+    text-align: center;
+}

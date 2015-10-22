@@ -1,0 +1,270 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #2e3640;
+    font-size: 12px;
+    background-color: #ecf1f7;
+}
+label {
+    font-weight: normal;
+}
+.container {
+    padding: 0;
+}
+.panel {
+}
+.panel-primary {
+    border: none;
+}
+.panel-primary > .panel-heading {
+    background-color: #333366;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 17px 0 13px 0;
+    text-align: center;
+}
+.panel-body {
+    background-color: #fff;
+    border-color: #e7e7e7;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    height: auto;
+    padding: 0 20px;
+}
+.panel-warning {
+    border: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+}
+.panel-warning .panel-heading {
+    padding: 0px 10px;
+}
+.panel-warning .panel-body {
+    border-color: #d3dbe3;
+    border-width: 0 1px;
+}
+.form-group {
+}
+.form-control {
+    font-size: 12px;
+    height: auto;
+    line-height: normal;
+}
+
+/*on redéfinit le style sur es text area : pas de cursor d'interdiction */
+textarea .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    cursor: default !important;
+}
+
+/*** btns - begin ***/
+.btn {
+    font-size: 12px;
+}
+.btn-primary,
+.btn-info {
+    border: none;
+}
+
+.btn-default {
+
+}
+.btn-primary{
+    background-color: #01c4c6;
+}
+.btn-primary:hover,
+.btn-primary:focus{
+    background-color: #01a8aa;
+}
+.btn-info{
+    background-color: #ec7c49;
+}
+.btn-info:hover,
+.btn-info:focus {
+    background-color: #bd633a;
+}
+.btn-lg {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+/*** btns - end ***/
+
+/*** page header - begin ***/
+.page-header {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #2e3640;
+    text-transform: uppercase;
+    margin: -10px 0 10px 0;
+}
+/*** page header - end ***/
+
+/*** list group - begin ***/
+.list-group {
+    margin-bottom: 10px;
+}
+
+.list-group-item {
+    border-radius: 4px;
+    padding: 10px 15px 5px;
+}
+
+a.list-group-item.active {
+    background-color: #7c61b3;
+    border-color: #7c61b3;
+}
+a.list-group-item.active:hover,
+a.list-group-item.active:focus {
+    background-color: #6a539a;
+    border-color: #6a539a;
+}
+/*** list group - end ***/
+
+/*** contextual backgrounds - begin ***/
+.bg-primary {
+    background-color: #fff;
+    border: none;
+    color: #2e3640;
+}
+/*** contextual backgrounds - end ***/
+
+/*** heading - begin ***/
+h5 {
+    font-weight: 600;
+    color: #7c61b3;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 4px 0;
+}
+
+h4 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 4px 0;
+}
+/*** headings  - end ***/
+
+.dropdown-menu {
+    font-size: 12px;
+}
+
+
+.badge {
+    background-color: #d2005b;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 10px;
+    padding: 1px 0 2px;
+    min-width: 20px;
+}
+
+.navbar {
+    min-height: 40px;
+}
+
+.navbar-default {
+    background-color: #7c61b3;
+    border: none;
+}
+
+.navbar-inverse {
+    background-color: #313250;
+    border: none;
+    font-size: 12px;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #20222a;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, 
+.navbar-inverse .navbar-nav > li > a:focus {
+    background-color: transparent;
+    color: #58b9ee;
+}
+
+.panel-default > .panel-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #7c61b3;
+    border: none;
+    color: #fff;
+}
+
+/*table styling*/
+.table-striped > tbody > tr:nth-child(2n+1) > td,
+.table-striped > tbody > tr:nth-child(2n+1) > th {
+    /* background-color: #e1e7ed ;*/
+    background-color: #ecf1f7 ;
+}
+
+.table > tbody > tr > td.active{
+    background-color: #58b9ee ;
+
+}
+
+.table .odd td{
+    /*background-color: #fff ;*/
+    background-color: #d3d8e3 ;
+
+}
+.table > tbody > tr > td{
+    border-top: 1px solid #d3d8e3 ;
+}
+
+/*table end styling*/
+
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus {
+    border-color: #fff;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    border-color: #fff;
+}
+
+
+/*modal*/
+.modal-header {
+	background-color : #7c61b3;
+	color : #fff;
+}
+.modal-dialog.modal-lg{
+    width : 900px !important; /*on redéfinit la taille ici car le style de bootstrap est surchargé par ce c_n de summernote */
+}
+
+.modal-body{
+	max-height: 490px;
+	overflow-y:auto;
+}
+
+
+/*alerts - notifications*/
+.alert {
+	font-size: 13px;
+}
+
+.alert {
+    border: 3px solid transparent;
+    border-left: 12px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    font-size: 13px;
+}
